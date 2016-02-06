@@ -88,19 +88,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.sys.fw.bservice_limit=5 \
     ro.sys.fw.bservice_age=5000
 
-# Ramdisk
-PRODUCT_PACKAGES += \
-    fstab.qcom \
-    init.qcom.efs.sync.sh \
-    init.qcom.rc \
-    init.qcom.power.rc \
-    ueventd.qcom.rc
-
-# TWRP Recovery
-PRODUCT_PACKAGES += \
-    postrecoveryboot.sh \
-    twrp.fstab
-
 # Audio config
 PRODUCT_COPY_FILES += \
     device/samsung/msm8660-common/configs/audio_policy.conf:system/etc/audio_policy.conf
